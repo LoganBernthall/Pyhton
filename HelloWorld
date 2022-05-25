@@ -20,3 +20,4 @@ print(MyPaycheck)
 
 #All together
 print('Hello world! Are you ready to learn python\n' + MyName + '?' + '\nYour age is ' + str(MyAge) + '\nand so far you earn\n' + str(MyPaycheck) + '.')
+
