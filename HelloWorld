@@ -1,2 +1,22 @@
-print('Hello World')
+import string
 
+#Print function
+print('Hello World')
+print('Are you ready to learn python?')
+
+#Variables
+
+#String
+MyName = 'Logan'
+print(MyName) #Printing String
+ 
+#Int
+MyAge = 21
+print(MyAge) #Printing Int
+
+#Float 
+MyPaycheck = 2000.00
+print(MyPaycheck)
+
+#All together
+print('Hello world! Are you ready to learn python\n' + MyName + '?' + '\nYour age is ' + str(MyAge) + '\nand so far you earn\n' + str(MyPaycheck) + '.')
