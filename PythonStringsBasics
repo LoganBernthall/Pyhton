@@ -1,3 +1,5 @@
+#--------------------------------------------Basics--------------------------------------------#
+
 #Basic print
 print("Hello")
 
@@ -29,5 +31,15 @@ print("see" in checktxt) #print boolean value "True"
 
 #Use IF statment to check if string contains a certain phrase or element
 checktxtif = "Lets see if the code can check what is in here!"
-if "see" in checktxtif:
-    print("Correct, the word 'see' is in the phrase!")
+if "see" in checktxtif: #statment will check for the word "see" within the phrase
+    print("Correct, the word 'see' is in the phrase!") #If true, this will be printed
+
+#Check if NOT 
+notcheck = "I hate pizza"
+print("tacos" not in notcheck) #This will print True as the phrase "tacos" is not in the text and that is what the code is looking for
+
+#check if NOT in an IF statement
+if "tacos" not in notcheck:
+    print("No! we are talking about pizza here!")
+
+#--------------------------------------------Slcing strings--------------------------------------------#
