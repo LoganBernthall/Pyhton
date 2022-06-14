@@ -1,3 +1,5 @@
+#--------------------------------------------IGNORE imports only--------------------------------------------#
+import webbrowser
 #--------------------------------------------Basics--------------------------------------------#
 
 #Basic print
@@ -42,4 +44,9 @@ print("tacos" not in notcheck) #This will print True as the phrase "tacos" is no
 if "tacos" not in notcheck:
     print("No! we are talking about pizza here!")
 
+#For more information
+webbrowser.open("https://www.w3schools.com/python/python_strings.asp")
+
 #--------------------------------------------Slcing strings--------------------------------------------#
+#Slicing cuts characters 
+salutations = "Hello there!" 
