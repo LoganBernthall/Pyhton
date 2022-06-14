@@ -1,0 +1,20 @@
+#Basic print
+print("Hello")
+
+#Assigning a string to a variable
+greeting = "Hello"
+print(greeting)
+
+#Multiline string
+multi = """This is a multiline string.
+You can see that multiline strings use more (") when starting and
+finishing the string."""
+print(multi)
+
+#String as an array
+a = "Hello, world!"
+print(a[1]) #Slightly harder concept to understand but this will print "e"
+
+#String looping
+for x in "Python":
+    print(x) #indentation remember! 
