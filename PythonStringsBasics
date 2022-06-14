@@ -22,3 +22,12 @@ for x in "Python":
 #String length
 welcome = "Welcome to python"
 print(len(welcome)) #this will not print what the string contains but the length
+
+#Check if string contains a certain phrase or element 
+checktxt = "Lets see if the code can check what is in here!"
+print("see" in checktxt) #print boolean value "True"
+
+#Use IF statment to check if string contains a certain phrase or element
+checktxtif = "Lets see if the code can check what is in here!"
+if "see" in checktxtif:
+    print("Correct, the word 'see' is in the phrase!")
