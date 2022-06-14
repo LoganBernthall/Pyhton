@@ -18,3 +18,7 @@ print(a[1]) #Slightly harder concept to understand but this will print "e"
 #String looping
 for x in "Python":
     print(x) #indentation remember! 
+
+#String length
+welcome = "Welcome to python"
+print(len(welcome)) #this will not print what the string contains but the length
