@@ -1,5 +1,6 @@
 #--------------------------------------------Lists--------------------------------------------#
 
+from re import A
 import this
 
 
@@ -26,3 +27,24 @@ print(CarList[1:3])
 Alist = ["London" , "Looe" , "Bournemouth" , "Cardiff" , "Plymouth" , "Bristol" , "Glasgow"]
 if "Cardiff" in Alist:
     print("Yes, 'Cardiff' is in the list")
+
+#Change list item
+Alist[1] = "Paris"
+print(Alist)
+
+#Change a range of list items
+Alist[1:3] = ["Paris", "New York"]
+print(Alist)
+
+#Item insert
+Alist.insert(5, "Amsterdam")
+print(Alist)
+
+#Append items to end of list
+Alist.append("Mexico City")
+print(Alist)
+
+#Extend list
+Blist = ["Los Angeles" , "Madrid" , "Liverpool" , "Tokyo" , "Beijing"]
+Alist.extend(Blist)
+print(Alist)
