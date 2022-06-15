@@ -46,7 +46,7 @@ if "tacos" not in notcheck:
     print("No! we are talking about pizza here!")
 
 #For more information
-#webbrowser.open("https://www.w3schools.com/python/python_strings.asp")
+webbrowser.open("https://www.w3schools.com/python/python_strings.asp")
 
 #--------------------------------------------Slcing strings--------------------------------------------#
 
@@ -104,5 +104,6 @@ myorderInd = "I want to pay {2} pounds for {0} pieces of item {1}"
 print(myorderInd.format(quantity,itemno,price))
 
 #--------------------------------------------Escape charcacters--------------------------------------------#
+
 romans = "The so-called \"Romans\" were from Europe and they built good roads!"
 print(romans)
