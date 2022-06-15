@@ -1,5 +1,40 @@
 #--------------------------------------------Boolean values--------------------------------------------#
 
-print(10 > 9)
-print (10 == 9)
-print(10 < 9)
+print(10 > 9) #Print true
+print (10 == 9) #Print false
+print(10 < 9) #Print false
+
+#IF ELSE Statement
+a = 200 
+b = 33
+
+if b > a:
+    print("b is greater than a")
+else:
+    print("b is not greater than a")
+
+#Evaluate Values and Variables
+
+print(bool("Hello")) #Print true
+print(bool(15)) #Print true
+
+x = "Hello"
+y = 15
+
+print(bool(x)) #Print true
+print(bool(y)) #print true
+
+#False value, each value bellow with print false
+
+print(bool(False))
+print(bool(None))
+print(bool(0))
+print(bool(""))
+print(bool(()))
+print(bool([]))
+print(bool({}))
+
+#Check if an object is an integer or not
+
+num = 200 
+print(isinstance(num, object))
