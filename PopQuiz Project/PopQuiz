@@ -1,0 +1,27 @@
+
+import random
+from random import choice
+
+#Question Bank
+questions = ['Question1', 'Question2', 'Question3']
+
+#Answer bank
+answers = ['Question1', 'Question2', 'Question3']
+
+Choice = 'y'
+end = 'n'
+
+while choice  != 'n':
+    if len(questions) == 0:
+        print("No questions left!")
+        break
+
+    random_item = random.choice(questions)
+    print(random_item)
+    questions.remove(random_item)
+
+    print("Ready to continue? Y/N")
+    choice = input()
+    choice.lower
+
+   
