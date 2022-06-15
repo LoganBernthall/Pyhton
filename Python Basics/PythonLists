@@ -48,3 +48,11 @@ print(Alist)
 Blist = ["Los Angeles" , "Madrid" , "Liverpool" , "Tokyo" , "Beijing"]
 Alist.extend(Blist)
 print(Alist)
+
+#Remove items
+Alist.pop(5)
+print(Alist)
+
+#List clear
+Alist.clear()
+print(Alist)
