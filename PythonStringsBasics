@@ -1,4 +1,5 @@
 #--------------------------------------------IGNORE imports only--------------------------------------------#
+from operator import concat
 import webbrowser
 #--------------------------------------------Basics--------------------------------------------#
 
@@ -78,5 +79,30 @@ print(modiwhite.strip()) #prints "String modification!"
 #Replace string 
 print(modi.replace ("S" , "B"))
 
-#String split 
-print(modi.split(" g "))
+#--------------------------------------------String concatenation--------------------------------------------#
+yo = "Hello"
+location = "World"
+conect = yo + " " + location
+print(conect)
+
+#--------------------------------------------String Formatting--------------------------------------------#
+
+#String format
+age = 21
+messg = "My name is Logan, I am {} "
+print(messg.format(age))
+
+#Mutliple arguments 
+quantity = 5
+itemno = 44
+price = 78.50
+myorder = "I want {} prieces of item {} for {} pounds."
+print(myorder.format(quantity,itemno,price))
+
+#Multiple arguments with indexing
+myorderInd = "I want to pay {2} pounds for {0} pieces of item {1}"
+print(myorderInd.format(quantity,itemno,price))
+
+#--------------------------------------------Escape charcacters--------------------------------------------#
+romans = "The so-called \"Romans\" were from Europe and they built good roads!"
+print(romans)
