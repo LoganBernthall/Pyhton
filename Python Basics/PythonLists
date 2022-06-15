@@ -1,0 +1,20 @@
+#--------------------------------------------Lists--------------------------------------------#
+
+import this
+
+
+CarList = ["Ford" , "Audi" , "BMW"]
+print(CarList)
+
+#List Length
+print(len(CarList))
+
+#List type
+print(type(CarList))
+
+#List constructor
+ThisList = list(("Eggs" , "Bacon" , "Bread"))
+print(ThisList) 
+
+#Access List Items
+print(CarList[1])

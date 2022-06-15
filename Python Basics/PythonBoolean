@@ -37,4 +37,4 @@ print(bool({}))
 #Check if an object is an integer or not
 
 num = 200 
-print(isinstance(num, object))
+print(isinstance(num, int))
