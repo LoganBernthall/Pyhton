@@ -45,8 +45,38 @@ if "tacos" not in notcheck:
     print("No! we are talking about pizza here!")
 
 #For more information
-webbrowser.open("https://www.w3schools.com/python/python_strings.asp")
+#webbrowser.open("https://www.w3schools.com/python/python_strings.asp")
 
 #--------------------------------------------Slcing strings--------------------------------------------#
+
 #Slicing cuts characters 
 salutations = "Hello there!" 
+print(salutations[2:5]) #print characters from position 2-5
+
+#slicing from the start
+print(salutations[:5]) #print characters from start to position 5
+
+#Slicing to the end
+print(salutations[2:]) #print characters from position 2 till end.
+
+#Negative indexing
+print(salutations[-5:-2])
+
+#--------------------------------------------String modification--------------------------------------------#
+
+#uppercase
+modi = "String modification!"
+print(modi.upper())
+
+#lowercase
+print(modi.lower())
+
+#remove whitespace
+modiwhite = "              String modification!            "
+print(modiwhite.strip()) #prints "String modification!"
+
+#Replace string 
+print(modi.replace ("S" , "B"))
+
+#String split 
+print(modi.split(" g "))
