@@ -18,3 +18,11 @@ print(ThisList)
 
 #Access List Items
 print(CarList[1])
+
+#List indexing
+print(CarList[1:3])
+
+#Check if item exists
+Alist = ["London" , "Looe" , "Bournemouth" , "Cardiff" , "Plymouth" , "Bristol" , "Glasgow"]
+if "Cardiff" in Alist:
+    print("Yes, 'Cardiff' is in the list")
