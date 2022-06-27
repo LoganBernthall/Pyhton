@@ -6,5 +6,6 @@ print(x(5))
 
 #Add text to an argument
 
+
 y = lambda b : b + "Like this!"
-print("This is a lambda example, with this example text will be added" + " " + y)
+print("This is a lambda example, with this example text will be added" + " " + )
