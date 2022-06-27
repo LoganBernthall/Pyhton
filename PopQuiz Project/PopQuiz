@@ -20,6 +20,8 @@ while choice  != 'n':
     print(random_item)
     questions.remove(random_item)
 
+    if random_item(x) = answers[x]
+
     print("Ready to continue? Y/N")
     choice = input()
     choice.lower
