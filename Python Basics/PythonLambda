@@ -1,0 +1,10 @@
+#A Lmambda is a sall anonymous function
+
+#Add 10 to an argument
+x = lambda a : a + 10
+print(x(5))
+
+#Add text to an argument
+
+y = lambda b : b + "Like this!"
+print("This is a lambda example, with this example text will be added" + " " + y)
