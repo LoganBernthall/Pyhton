@@ -4,8 +4,10 @@
 x = lambda a : a + 10
 print(x(5))
 
-#Add text to an argument
+#Lambda functions
 
+def myfunc(n):
+    return lambda a : a * n 
 
-y = lambda b : b + "Like this!"
-print("This is a lambda example, with this example text will be added" + " " + )
+mydoubler = myfunc(2)
+print(mydoubler(11))
