@@ -1,13 +1,45 @@
 
+#String
+A = "Hello World"
 
-X = "Example"
-Y = "DataType"
+#Int
+B  = 20 
 
-print ("---------------------------------------------------------------")
-print (X , Y)
-print ("Hello World", 'string', 'A')
-print (' name1', '1', 'B')
-print (' name1', '1', 'C')
-print (' name1', '1', 'F')
-print (' name1', '1', 'A')
-print ("---------------------------------------------------------------")
+#Float
+C = 20.5
+
+#Complex 
+D = 1j
+
+#List
+E = ["apple", "banana", "cherry"]
+
+#Tuple
+F = ("apple", "banana", "cherry")
+
+#Range
+G = range(6)
+
+#Dict
+H = {"name" : "John", "age" : 36}
+
+#Set
+I = {"apple", "banana", "cherry"}
+
+#Frozenset
+J = frozenset({"apple", "banana", "cherry"})
+
+#Bool
+K = True
+
+#Bytes
+L = b"Hello"
+
+#Bytearray
+M = bytearray(5)
+
+#Memoryview
+N = memoryview(bytes(5))
+
+#NoneType
+O = None
