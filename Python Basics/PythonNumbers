@@ -1,0 +1,19 @@
+#Three numeric types in python
+
+A = 1 #int
+B = 2.8 #Float
+C = 1j #Complex
+
+#type() shows the type of object the variable is
+print(type(C))
+
+#Int information
+print("Int is a whole number that is either positive or negative without a decimal place" + " " + "E.G. " + str(A)) 
+print(" ")
+
+#Float information
+print("Float is a floating point number that is either positive or negative that containe one or more decimals"  + " " + "E.G. " + str(B))
+print(" ")
+
+#Complex information
+print("Complex is a number which are written with a 'j' as the imaginary part"  + " " + "E.G. " + str(C))

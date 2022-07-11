@@ -12,3 +12,5 @@ print(cars[1])
 #Append array elements
 cars.append("Honda")
 print(cars)
+
+#Removing array elements
