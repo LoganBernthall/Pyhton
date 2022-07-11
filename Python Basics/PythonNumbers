@@ -17,3 +17,14 @@ print(" ")
 
 #Complex information
 print("Complex is a number which are written with a 'j' as the imaginary part"  + " " + "E.G. " + str(C))
+
+#Type conversion
+
+#You can convert from one type to another
+
+#Random number
+
+#Import random module
+import random
+
+print(random.randrange(1, 100))
