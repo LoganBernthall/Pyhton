@@ -1,0 +1,14 @@
+#Basic Array
+cars = ['Ford', 'BMW' , 'Audi']
+
+#Access Array
+x = cars[1] #BMW
+print(x)
+
+#Modify value 
+cars[1] = "Toyota"
+print(cars[1])
+
+#Append array elements
+cars.append("Honda")
+print(cars)
