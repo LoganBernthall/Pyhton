@@ -1,0 +1,10 @@
+#format() method allows you to format selected parts of a string.
+
+price = 69
+txt = "The price is {} pounds" #{} = placeholder
+print(txt.format(price))
+
+#Format price to have two decimal points
+
+txt2 = "The price is {:.2f} pounds"
+print(txt2.format(price))
