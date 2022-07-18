@@ -1,0 +1,25 @@
+#Used to store multiple items in a single variable
+
+myset = {"Apple", "Mango", "Cherry"}
+print(myset)
+
+#Set length
+print(len(myset))
+
+#Loop through set
+for x in myset:
+    print(x)
+
+#Add items 
+myset.add("Orange")
+print(myset)
+
+#Remove items 
+myset.remove("Orange")
+print(myset)
+
+#Join two sets
+set2 = {1, 2, 3}
+
+set3 = myset.union(set2)
+print(set3)
