@@ -1,0 +1,48 @@
+#Dictionaries are used to store data values in key value pairs
+
+adict = {
+    "Brand:" : "Ford",
+    "Model" : "Fiesta",
+    "Year" : 2005
+}
+
+print(adict)
+
+#printing a specific item in a dictionary
+
+print(adict["Model"])
+
+#Dictionary length
+print(len(adict))
+
+#Get values
+
+x = adict.values()
+print(x)
+
+#Check if something is present in dictionary
+if "Year" in adict:
+    print("Yes it is")
+
+#Removing dictionary items 
+adict.pop("Year")
+print(adict)
+
+#Nested dictionary
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+for x in myfamily:
+    print(myfamily[x])
