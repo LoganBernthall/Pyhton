@@ -1,0 +1,28 @@
+#Casting is specifying a variable type
+
+
+#Integer casting
+x = int(1) #X will be 1 
+y = int(2.8) #y will be 2
+z = int("33") #z will be 33
+
+print(x)
+print(y)
+print(z)
+
+#Float casting
+
+a = float(1) #a will be 1.0
+print(a)
+
+#String casting
+
+b = str(3.0) #b will be 3.0
+
+print("Casting us used to change the variables/values declared in a certain data type into a different datatype.")
+
+#Example program
+
+CastedInput = input("Enter whole number:")
+
+print(float(CastedInput))
