@@ -1,0 +1,29 @@
+#RegEx or regular expression is a sequence of characters that forms a search pattern.
+#Can be used to check if a string contains the specified search pattern.
+from pickle import TRUE
+import re
+
+txt = "The cat sat on the mat"
+x = re.search("^The.*mat$", txt)
+
+if x:
+    print("Yes")
+else:
+    print("No")
+
+#RegEx function:
+
+#findall - Returns a list containing all matches:
+y = re.findall("a" , txt)
+print(y)
+
+#search - Returns a match object if there is a match anywhere in the string:
+z = re.search("m", txt)
+print(z)
+
+#split - Returns a list where a string has been split at each match:
+p = re.split("cat" , txt)
+print(p)
+#sub - Replaces one or many matches with a string
+o = re.sub("a" , "b" , txt)
+print(o)
