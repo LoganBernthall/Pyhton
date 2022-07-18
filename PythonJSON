@@ -1,0 +1,32 @@
+#Python has a package already built in to work with JSON data
+import json
+from urllib.request import urlopen #Used for accessing URL contents
+
+#Convert JSON to python - Using online FAKE API Data 
+link = "https://jsonplaceholder.typicode.com/todos/1" #Link to API data
+f = urlopen(link) #Opens URL
+myfile = f.read() #Reads URL
+print(myfile)
+print("  ") #Just used as a line gap
+#parse data
+
+y = json.loads(myfile)
+
+#Create python dictionary
+print(y)
+print("  ") #Just used as a line gap
+
+#Converting from Python to JSON
+
+#Python dict
+x = {
+"Name:": "Bob",
+"Age:": "21",
+"City:": "London"
+}
+
+#Convert to JSON
+y = json.dumps(x)
+
+#print JSON string
+print(y)
