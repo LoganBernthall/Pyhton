@@ -1,0 +1,11 @@
+
+#Basic input example
+username = input("Enter Username:")
+print("Username is:" + " " + username)
+
+#Multiple input example
+
+Fname = input("Enter first name:")
+Lname = input("Enter last name:")
+
+Wname = print("Your full name is:" + " " + Fname + " " + Lname)
