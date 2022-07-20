@@ -1,0 +1,28 @@
+#Print i as long as it is less than 10
+i = 0 
+while i < 10:
+    print(i)
+    i +=1
+
+print(" ") #Only being used as a line 
+
+#Using a break condition in a loop 
+#break statement can be used to stoop even if the while condition is true E.G.
+
+i = 0
+while i < 10:
+    print(i)
+    if i == 5:
+        break
+    i += 1
+
+print(" ") #Only being used as a line 
+
+#Continue statement 
+i = 0 
+while i < 10:
+    i += 1
+    if i == 5: #Note - 5 will be missing
+        continue
+    print(i)
+
