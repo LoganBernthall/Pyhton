@@ -1,0 +1,19 @@
+cars = ["Audi", "BMW" ,"Ford"]
+for x in cars:
+    print(x)
+
+#Looping through a string - Used to stop a loop before it has looped through all the items.
+for x in "BMW":
+    print(x)
+
+#Break statement 
+for x in cars:
+    print(x)
+    if x == "BMW":
+        break
+    print(x)
+
+print(" ") #Only being used as a line 
+#range() function - used to loop through code a specified number of times
+for y in range(10):
+    print(y)
