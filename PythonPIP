@@ -1,0 +1,5 @@
+#Using an installed package via pip
+import camelcase
+c = camelcase.CamelCase()
+txt = "Hello world"
+print(c.hump(txt))
