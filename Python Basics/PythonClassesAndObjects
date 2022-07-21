@@ -1,0 +1,16 @@
+#A class is like an object constructor/blueprint for creating
+class MyClass:
+    x = 5
+
+#Create object
+p1 = MyClass()
+print(p1.x)
+
+#__init__() function - Used to assign values to object properties or other opperations to do with the object
+class Logan:
+    def __init__(Self, name, age):
+        Self.name = name
+        Self.age = age
+p1 = Logan("Logan", 36)
+print(p1.name)
+print(p1.age)
