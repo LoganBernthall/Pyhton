@@ -14,3 +14,7 @@ class Logan:
 p1 = Logan("Logan", 36)
 print(p1.name)
 print(p1.age)
+
+#Pass - used to avoid getting an error when a class is empty 
+class you:
+    pass
