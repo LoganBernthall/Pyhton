@@ -1,0 +1,29 @@
+#A function is a block of code which will only run when it is called
+
+#Creating a function
+def my_function():
+    print("Hello from a function")
+
+#Calling a function 
+my_function()
+
+#Arguments - Information which is passed into functions
+
+def greeting(fname):
+    print("Hello" + " " + fname)
+
+greeting("Logan")
+greeting("Matt")
+greeting("Bill")
+
+print(" ") #Only being used as white space
+
+def arguments_parameters(arg, par):
+    print(arg + " " + par)
+arguments_parameters("Arguments and parameters are the same thing - Info passed through a function." , "If a function is expecting 2 arguments it will need 2 arguments to work.")
+
+#Arbitary Arguments *args 
+#Used if you do not know who many arguments will be passed into your functions
+def garage(*cars):
+    print("The newest car in my garage is the " + cars[2] + ".")
+garage("Ford" , "Toyota" , "Audi" , "BMW")
