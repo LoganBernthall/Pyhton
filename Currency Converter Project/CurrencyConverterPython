@@ -1,10 +1,18 @@
+import string
 import tkinter as tk
 
 #Create Tkinter GUI
 window=tk.Tk()
 window.title("Currency Conversion") #Window name
 window.minsize(width=450, height=275) #Window size
-window.iconphoto(False, tk.PhotoImage(file='Currency Converter Project\CurrencyImages\favicon-32x32.png'))
 
 #Start GUI
 window.mainloop()
+
+#Global Variable set
+ValInput1 = tk.DoubleVar #tkinter double 
+
+#Entry box
+ValEntry = tk.Entry(window, text="This is Entry Widget", bd=5)
+ValEntry.place(x=90, y=90)
+
