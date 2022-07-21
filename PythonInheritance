@@ -1,0 +1,24 @@
+#Allows us to define a class that inherits all its methods and properties from another class 
+
+#Parent class
+from time import perf_counter
+
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+#Use the person class to create an object
+x = Person("John", "Doe")
+x.printname()
+
+#Child class creation
+class Student(Person):
+    pass
+
+x = Student("Logan", "B")
+x.printname()
