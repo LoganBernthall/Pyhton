@@ -1,0 +1,6 @@
+#A module is a file containing a set of functions you want to include in your application
+
+#Accessing a function from a different piece of code
+import PythonFunctions
+
+PythonFunctions.greeting("Logan")
