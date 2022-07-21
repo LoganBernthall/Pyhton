@@ -1,0 +1,10 @@
+from tkinter import *
+
+#Create Tkinter GUI
+window=Tk()
+window.title("Currency Conversion")
+window.minsize(width=450, height=275)
+
+
+#Start GUI
+window.mainloop()
