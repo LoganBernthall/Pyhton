@@ -1,0 +1,35 @@
+#Min function 
+x = min(1, 2, 3)
+print(x)
+
+#Max function
+y = max(1, 2, 3)
+print(y)
+
+#abs() function - returns a positive
+z = abs(-100)
+print(z)
+
+#pow(z, y) returns the value of x to the power of y
+u = pow(10, 3)
+print(u)
+
+#Math import 
+import math
+
+#math.sqrt() returns square root of a number
+x = math.sqrt(64)
+print(x)
+
+#math.ceil - returns round number upwards
+a = math.ceil(1.4)
+print(a)
+
+#math.floor - rounds a number downwards
+b = math.floor(1.4)
+print(b)
+
+#math.pi returns the value of pi
+c = math.pi
+print(c)
+
