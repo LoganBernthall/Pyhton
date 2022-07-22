@@ -1,0 +1,31 @@
+#Try block - allows you to test a block of code for errors.
+#Except block lets you handle the error.
+#The else block lets you execute code, regardless of the result of the try.
+#The finally block lets you execute code, regardless of the result of the try and except blocks
+
+#try blocl will generate an exception, because x is not defined:
+try:
+    print(X)
+except:
+    print("An exception occured")
+
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
+
+try:
+  print(y)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+
+#Raise exception 
+
+z = -1
+
+if z < 0:
+  raise Exception("Sorry, no numbers below zero")
