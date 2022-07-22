@@ -1,0 +1,26 @@
+#A vairable is only available from inside the region it is created - this is called scope
+
+#Local scope - A variable created inside a function belongs to the local scope.
+
+def AFunc():
+    x = 100
+    print(x)
+
+AFunc()
+
+#Global scope 
+y = 1
+
+def BFunc():
+    print(y)
+BFunc()
+
+print(y)
+
+#Global keyword - Used when a variable is in local scope but is wanted in a global scope
+
+def CFunc():
+    global z 
+    z = 1000
+CFunc()
+print(z)
