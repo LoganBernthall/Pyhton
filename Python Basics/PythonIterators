@@ -1,0 +1,33 @@
+#An iterator is an object that contains a countable number of values
+mytuple = ("Apple" , "Banana" , "Cherry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+mystr = "Chicken Nuggets"
+iteration = iter(mystr)
+
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+print(next(iteration))
+
+#Looping through
+
+astr = "Welcome to iterators in python!"
+
+for x in astr:
+    print(x)
