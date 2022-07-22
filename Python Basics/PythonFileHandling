@@ -1,0 +1,8 @@
+# r - Read file.
+# a - Append file.
+# w - write into file.
+# x - create file.
+#Can specify if a file should be handled as text(t) or binary(b - e.g. images)
+
+#Open file
+f = open("Example.txt")
