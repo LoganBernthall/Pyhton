@@ -1,0 +1,8 @@
+import pandas as pd
+from openpyxl.workbook import workbook
+
+df_excel = pd.read_excel('\GitHub\PyhtonLearning\Python With Excel Course\Ex_Files_Python_Excel\Exercise Files\regions.xlsx')
+df_csv = pd.read_csv('Names.csv')
+df_txt = pd.read_csv('data.txt')
+
+print(df_excel)
