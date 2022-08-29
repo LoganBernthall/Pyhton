@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.array(["Class A", " Class B", " Class C", " Class D"])
+y = np.array([3, 8, 1, 10])
+
+plt.xlabel("Class")
+plt.ylabel("Size")
+
+plt.bar(x,y)
+plt.show()

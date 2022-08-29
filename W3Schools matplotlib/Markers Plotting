@@ -4,5 +4,5 @@ import numpy as np
 
 ypoints = np.array([3, 8, 1, 10])
 
-plt.plot(ypoints, marker = '0')
+plt.plot(ypoints, marker = '0') #Marking values of ypoints, '0' represents marker shap
 plt.show()
