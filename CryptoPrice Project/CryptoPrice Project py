@@ -1,0 +1,13 @@
+import json
+import requests
+
+#API key
+key = "17cf1c41-d5ae-4446-84fe-fd5b7394fb26"
+
+#URL 
+url = 'https://sandbox-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
+
+#Request data
+data = requests.get(url)
+data = data.json()
+print(data)
