@@ -3,6 +3,17 @@ import json
 import time
 import webbrowser
 import pprint
+import eel
+
+# name of folder where the html, css, js, image files are located
+eel.init('CryptoPrice Project')
+
+@eel.expose
+def demo(x):
+    return x**2
+
+# 1000 is width of window and 600 is the height
+eel.start('index.html', size=(1000, 600))
 
 key = "17cf1c41-d5ae-4446-84fe-fd5b7394fb26"
 
