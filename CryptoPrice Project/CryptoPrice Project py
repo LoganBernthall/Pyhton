@@ -33,10 +33,10 @@ def GetBitcoin():
 
     response = session.get(url, params=parameters)
 
-    info = json.loads(response.text)['data']['1']['quote']['GBP']['price'] 
+    infoBitcoin = json.loads(response.text)['data']['1']['quote']['GBP']['price'] 
     
     print("Bitcoin Price (£):")
-    pprint.pprint(info)
+    pprint.pprint(infoBitcoin)
         
 GetBitcoin()
 
@@ -56,10 +56,10 @@ def GetEthereum():
 
     response = session.get(url, params=parameters)
 
-    info = json.loads(response.text)['data']['1027']['quote']['GBP']['price'] 
+    infoEthereum = json.loads(response.text)['data']['1027']['quote']['GBP']['price'] 
     
     print("Ethereum Price (£):")
-    pprint.pprint(info)
+    pprint.pprint(infoEthereum)
 
 GetEthereum()
 
@@ -79,9 +79,9 @@ def GetCardano():
 
     response = session.get(url, params=parameters)
 
-    info = json.loads(response.text)['data']['2010']['quote']['GBP']['price'] 
+    infoCardano = json.loads(response.text)['data']['2010']['quote']['GBP']['price'] 
     
     print("Cardano Price (£):")
-    pprint.pprint(info)
+    pprint.pprint(infoCardano)
 
 GetCardano()
