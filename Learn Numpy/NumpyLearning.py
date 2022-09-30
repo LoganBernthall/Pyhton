@@ -42,3 +42,15 @@ print("   ")#Adding whitespace only
 ArrayBoolean = np.array([[1,0,0], [1,1,1], [0,0,0]])
 ArrayBooleanSorted = ArrayBoolean.astype('bool')
 print(ArrayBooleanSorted)
+
+#Custom sequence generation - Generation of a sequence in a numpy array
+print("   ")#Adding whitespace only
+List_Of_Numbers = [x for x in range(0, 101, 2)] #Range of 0 to 100 with gaps of 2 numbers
+sequence = np.array(List_Of_Numbers)
+print(sequence)
+
+#Getting positions (indexes) where elements of 2 numpy arrays match
+print("   ")#Adding whitespace only
+ArrayMatch1 = np.array([1,2,3,4,5])
+ArrayMatch2 = np.array([1,3,2,4,5])
+print(np.where(ArrayMatch1 == ArrayMatch2))
