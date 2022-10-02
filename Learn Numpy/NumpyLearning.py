@@ -54,3 +54,14 @@ print("   ")#Adding whitespace only
 ArrayMatch1 = np.array([1,2,3,4,5])
 ArrayMatch2 = np.array([1,3,2,4,5])
 print(np.where(ArrayMatch1 == ArrayMatch2))
+
+#Arrange array using numpy
+print("   ")#Adding whitespace only
+np.random.seed(100)
+Arand = np.random.randint(20, size=10)
+print('Array: ', Arand)
+#Arranging Array
+print("   ")#Adding whitespace only
+print(Arand.argsort().argsort())
+print('Sorted Array: ', Arand)
+
