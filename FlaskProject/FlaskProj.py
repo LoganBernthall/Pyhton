@@ -9,74 +9,44 @@ key = "17cf1c41-d5ae-4446-84fe-fd5b7394fb26"
 
 @app.route("/")
 def index(name=NONE):
-    return render_template('index.html', name=name)
-
-@app.route('/')
-def GetBitcoin():
 
     #URL 
     url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
-    parameters = { 'slug': 'bitcoin', 'convert': 'GBP' } 
+    parametersBit = { 'slug': 'bitcoin', 'convert': 'GBP' } 
 
     headers = {
         'Accepts': 'application/json',
         'X-CMC_PRO_API_KEY': key
     }
 
+##Bitcoin#################
     session = Session()
     session.headers.update(headers)
-
-    response = session.get(url, params=parameters)
-
+    response = session.get(url, params=parametersBit)
     infoBitcoin = json.loads(response.text)['data']['1']['quote']['GBP']['price'] 
-    
     print("Bitcoin Price (£):")
     pprint.pprint(infoBitcoin)
-        
-GetBitcoin()
+################### 
+##Ethereum################# 
 
-def GetEthereum():
-
-    #URL 
-    url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
-    parameters = { 'slug': 'ethereum', 'convert': 'GBP' } 
-
-    headers = {
-        'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': key
-    }
-
+    parametersEth = { 'slug': 'ethereum', 'convert': 'GBP' } 
     session = Session()
     session.headers.update(headers)
-
-    response = session.get(url, params=parameters)
-
+    response = session.get(url, params=parametersEth)
     infoEthereum = json.loads(response.text)['data']['1027']['quote']['GBP']['price'] 
-    
     print("Ethereum Price (£):")
     pprint.pprint(infoEthereum)
+##Cardano################# 
 
-GetEthereum()
-
-def GetCardano():
-
-    #URL 
-    url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest'
-    parameters = { 'slug': 'cardano', 'convert': 'GBP' } 
-
-    headers = {
-        'Accepts': 'application/json',
-        'X-CMC_PRO_API_KEY': key
-    }
-
+    parametersC = { 'slug': 'cardano', 'convert': 'GBP' } 
     session = Session()
     session.headers.update(headers)
-
-    response = session.get(url, params=parameters)
-
+    response = session.get(url, params=parametersC)
     infoCardano = json.loads(response.text)['data']['2010']['quote']['GBP']['price'] 
-    
     print("Cardano Price (£):")
     pprint.pprint(infoCardano)
+################### 
 
-GetCardano()
+    return render_template('index.html', name=name, infoBitcoin=infoBitcoin, infoEthereum=infoEthereum, infoCardano=infoCardano)
+
+        
