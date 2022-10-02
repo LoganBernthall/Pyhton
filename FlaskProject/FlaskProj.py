@@ -46,7 +46,16 @@ def index(name=NONE):
     print("Cardano Price (£):")
     pprint.pprint(infoCardano)
 ################### 
+##Dodgecoin################# 
 
-    return render_template('index.html', name=name, infoBitcoin=infoBitcoin, infoEthereum=infoEthereum, infoCardano=infoCardano)
+    parametersDog = { 'slug': 'dogecoin', 'convert': 'GBP' } 
+    session = Session()
+    session.headers.update(headers)
+    response = session.get(url, params=parametersDog)
+    infoDog = json.loads(response.text)['data']['74']['quote']['GBP']['price'] 
+    print("Dogecoin Price (£):")
+    pprint.pprint(infoDog)
+
+    return render_template('index.html', name=name, infoBitcoin=infoBitcoin, infoEthereum=infoEthereum, infoCardano=infoCardano, infoDog=infoDog)
 
         
