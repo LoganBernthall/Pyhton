@@ -149,7 +149,13 @@ body {
   display: none;
 }
 
-#Test
-{
-    left: 40%;
+.nav-container input[type="checkbox"]:checked ~ .rectangle{
+  display: none;
 }
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background: red;
+}
+
