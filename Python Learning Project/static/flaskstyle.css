@@ -149,7 +149,12 @@ body {
   display: none;
 }
 
+.nav-containerinput[type="checkbox"]:checked ~ .Hide {
+  display: none;
+}
+
 .rectangle {
+  font-family: "Poppins", sans-serif;
   position: absolute;
   width: 60%;
   height: 40%;
@@ -182,4 +187,53 @@ body {
   border-radius: 25px;
   text-align: center;
 }
+#banner-wrap {
+  position:relative;
+ 
+}
+#banner::after { 
+  content: "";
+  display:block;
+  background: orange;
+  width:200%;
+  height:500px;
+  position:absolute;
+  left:-90%;
+  top:-70%;
+  z-index:0;
+  transform: rotate(13deg);
+  z-index: -2;
+}
 
+.box {
+  width:70%;
+  height:300px;
+  background:rgb(146, 142, 142);
+  margin:40px auto;
+}
+
+.effect1{
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+}
+
+.PFormatted
+{
+  text-align: center;
+}
+
+.BasicB1
+{
+top: 10%;
+}
+
+.BasicB2
+{
+top: 20%;
+}
+
+.BasicB3
+{
+top: 20%;
+}
