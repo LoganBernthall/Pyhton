@@ -247,4 +247,6 @@ top: 20%;
 }
 ul.a {
   list-style-type: circle;
+  width: 14%;
+  margin: auto;
 }
