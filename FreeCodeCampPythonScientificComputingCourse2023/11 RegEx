@@ -1,2 +1,18 @@
 #Character based programming language
 #Not base python
+
+#RegEx B example 1
+import re
+s = 'A message from csev@umich.edu to cwen@iupui.edu about meeting @2PM'
+lst = re.findall('\\S+@\\S+', s)
+print(lst)
+
+#RegEx B example 2
+x = 'My 2 favourite numbers are 11 and 27'
+y = re.findall('[0-9]+', x)
+print(y) 
+
+#Fine-Tuning String Extraction
+z = 'stephen.marquard@uct.ac.za sat jan 5 09:14:16 2008'
+q = re.findall('\S+@\S+', z) #This will extract email address
+print(q)
