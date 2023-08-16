@@ -1,28 +1,23 @@
 <!DOCTYPE html>
+<!--NOTICE - PROJECT IS USING BOOTSTRAP RESOURCES-->
 <html>
 <head>
     <meta charset="utf-8">
-    <title>sample</title>
-        <link href="static/flaskstyle.css" rel="stylesheet">
-        <script type="text/javascript" src="/eel.js"></script>
-        <script type="text/javascript" src="/templates/flaskscript.js"></script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A layout example that shows off a responsive product landing page.">
-        <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
-        <link rel="stylesheet" href="/css/pure/pure-min.css">
-        <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
-        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-        <link rel="stylesheet" href="/layouts/marketing/styles.css">
+    <title>Sample Crypto Prices</title>
+    <link rel="stylesheet" href="static/flaskstyle.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="/templates/flaskscript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A layout example that shows off a responsive product landing page.">
+    <link rel="stylesheet" href="/css/pure/pure-min.css">
+    <link rel="stylesheet" href="/css/pure/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="/layouts/marketing/styles.css">
 </head>
 <body>
-<!--
-have to call compute() from here for example when user clicks any button or something like that.
--->
 <div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">Your Site</a>
-
+        <a class="pure-menu-heading" href="#">Your Site</a>
         <ul class="pure-menu-list">
             <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
             <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tour</a></li>
@@ -34,64 +29,32 @@ have to call compute() from here for example when user clicks any button or some
 <div class="splash-container">
     <div class="splash">
         <h1 class="splash-head">Crypto Prices (£):</h1>
-        <p class="splash-subhead">
-            Live Crypto Price Updates!
-        </p>
+        <p class="splash-subhead">Live Crypto Price Updates!</p>
     </div>
 </div>
 
 <div class="content-wrapper">
     <div class="content">
-        <h2 class="content-head is-center">Trending Crypto prices:</h2>
-
+        <h2 class="content-head is-center">Trending Crypto Prices:</h2>
         <div class="pure-g">
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    Bitcoin price:
-                </h3>
-                <p>
-                    {{infoBitcoin}}
-                </p>
+                <h3 class="content-subhead"><i class="fa fa-rocket"></i> Bitcoin Price:</h3>
+                <p>{{infoBitcoin}}</p> <!--{{infoBitcoin}} Links to Flask-->
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    Ethereum price:
-                </h3>
-                <p>
-                    {{infoEthereum}}
-                </p>
+                <h3 class="content-subhead"><i class="fa fa-rocket"></i> Ethereum Price:</h3>
+                <p>{{infoEthereum}}</p> <!--{{infoEthereum}} Links to Flask-->
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    Cardano price:
-                </h3>
-                <p>
-                    {{infoCardano}}
-                </p>
+                <h3 class="content-subhead"><i class="fa fa-rocket"></i> Cardano Price:</h3>
+                <p>{{infoCardano}}</p><!--{{infoCardano}} Links to Flask-->
             </div>
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <h3 class="content-subhead">
-                    <i class="fa fa-rocket"></i>
-                    DogeCoin Price:
-                </h3>
-                <p>
-                    {{infoDog}}
-                </p>
+                <h3 class="content-subhead"><i class="fa fa-rocket"></i> Dogecoin Price:</h3>
+                <p>{{infoDog}}</p><!--{{infoDog}} Links to Flask-->
             </div>
         </div>
     </div>
-
-   
-    </div>
-
-   
-
 </div>
-
-
 </body>
 </html>

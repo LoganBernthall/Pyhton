@@ -1,3 +1,4 @@
+#Imports
 from pickle import NONE
 from flask import Flask, render_template
 from requests import Request, Session
@@ -25,7 +26,7 @@ def index(name=NONE):
     response = session.get(url, params=parametersBit)
     infoBitcoin = json.loads(response.text)['data']['1']['quote']['GBP']['price'] 
     print("Bitcoin Price (£):")
-    pprint.pprint(infoBitcoin)
+    pprint.pprint(infoBitcoin) ##PPrint = pretty print function not a typo!
 ################### 
 ##Ethereum################# 
 
@@ -35,7 +36,7 @@ def index(name=NONE):
     response = session.get(url, params=parametersEth)
     infoEthereum = json.loads(response.text)['data']['1027']['quote']['GBP']['price'] 
     print("Ethereum Price (£):")
-    pprint.pprint(infoEthereum)
+    pprint.pprint(infoEthereum) ##PPrint = pretty print function not a typo!
 ##Cardano################# 
 
     parametersC = { 'slug': 'cardano', 'convert': 'GBP' } 
@@ -44,7 +45,7 @@ def index(name=NONE):
     response = session.get(url, params=parametersC)
     infoCardano = json.loads(response.text)['data']['2010']['quote']['GBP']['price'] 
     print("Cardano Price (£):")
-    pprint.pprint(infoCardano)
+    pprint.pprint(infoCardano) ##PPrint = pretty print function not a typo!
 ################### 
 ##Dodgecoin################# 
 
@@ -54,7 +55,7 @@ def index(name=NONE):
     response = session.get(url, params=parametersDog)
     infoDog = json.loads(response.text)['data']['74']['quote']['GBP']['price'] 
     print("Dogecoin Price (£):")
-    pprint.pprint(infoDog)
+    pprint.pprint(infoDog) ##PPrint = pretty print function not a typo!
 
     return render_template('index.html', name=name, infoBitcoin=infoBitcoin, infoEthereum=infoEthereum, infoCardano=infoCardano, infoDog=infoDog)
 
