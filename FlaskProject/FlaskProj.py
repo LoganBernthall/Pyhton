@@ -6,7 +6,7 @@ import json
 import pprint
 
 app = Flask(__name__)
-key = "17cf1c41-d5ae-4446-84fe-fd5b7394fb26"
+key = ""
 
 @app.route("/")
 def index(name=NONE):
